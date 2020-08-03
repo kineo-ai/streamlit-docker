@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: streamlit-app
+  labels:
+    app: streamlit-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: streamlit-app
+  template:
+    metadata:
+      name: streamlit-app
+      labels:
+        app: streamlit-app
+    spec:
+      containers:
+        - name: streamlit-prcing
+          image: "195444983751.dkr.ecr.eu-central-1.amazonaws.com/pricing_streamlit:latest"
+          ports:
+            - name: streamlit-port
+              containerPort: 8501
+              protocol: TCP
+          resources:
+            limits:
+              cpu: 0.5
+              memory: 512M
+          env:
+            - name: DEBUG_MODE
+              value: "1"
