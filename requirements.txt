@@ -2,4 +2,4 @@ streamlit
 numpy
 pandas
 sklearn
-dtreeviz
+dtreeviz==0.8.2
