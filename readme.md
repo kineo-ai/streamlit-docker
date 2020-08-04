@@ -8,8 +8,6 @@ This repository is featured in a 3-part series on [Deploying web apps with Strea
 
 ## Setup instructions
 
-If you are interested in the web app backed by a Postgres database, checkout out the [`docker-compose+postgres` branch](https://github.com/collinprather/streamlit-docker/tree/docker-compose+postgres). 
-
 ### Getting up and running locally
 
 ```shell
@@ -38,4 +36,4 @@ $
 
 ### Deploying to the cloud
 
-Refer to my [blog post](https://collinprather.github.io/blog/docker/aws/2020/03/11/streamlit-docker-pt2.html)!
+follow the instructions in the [kubernetes application module](https://github.com/kineo-ai/kubernetes-application-module)!
